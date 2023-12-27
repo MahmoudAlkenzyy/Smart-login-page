@@ -31,7 +31,7 @@ function test(element, regex) {
     });
 }
 
-if (window.location.pathname == '/signup.html') {
+if (window.location.pathname == '/Smart-login-page/') {
     var firstName = document.querySelector('#firstName');
     var lastName = document.querySelector('#lastName');
     var email = document.querySelector('#email');
