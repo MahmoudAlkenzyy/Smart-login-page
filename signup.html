@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign up</title>
+        <link rel="stylesheet" href="./css/all.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <section>
+            <div class="container-fluid vh-100">
+                <div class="row">
+                    <div class="col-6 bg-secondary-subtle">
+                        <div
+                            class="inner d-flex gap-5 flex-column justify-content-center vh-100 align-content-center p-5"
+                        >
+                            <h1 class="bold text-uppercase text-center">
+                                Welcome to Nike
+                            </h1>
+                            <form
+                                action=""
+                                class="signup w-75 mx-auto d-flex gap-3 flex-column px-3"
+                            >
+                                <input
+                                    id="firstName"
+                                    class="form-control"
+                                    type="text"
+                                    name="firstName"
+                                    placeholder="First Name"
+                                    onkeyup=""
+                                />
+
+                                <input
+                                    id="lastName"
+                                    class="form-control"
+                                    type="text"
+                                    name="lastName"
+                                    placeholder="Last Name"
+                                />
+                                <input
+                                    id="email"
+                                    class="form-control"
+                                    type="email"
+                                    placeholder="Email"
+                                />
+                                <input
+                                    id="password"
+                                    class="form-control"
+                                    type="password"
+                                    placeholder="Password"
+                                />
+                                <div
+                                    class="alert alert-danger d-none"
+                                    role="alert"
+                                ></div>
+                                <button
+                                    disabled="false"
+                                    id="submit"
+                                    class="btn-danger btn"
+                                >
+                                    Sign Up
+                                </button>
+                                <p class="text-body-secondary text-center">
+                                    Already have an account?<span
+                                        id="goLogin"
+                                        role="button"
+                                        class="text-primary"
+                                    >
+                                        Log In</span
+                                    >
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6 bgg vh-100"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+    </body>
+</html>

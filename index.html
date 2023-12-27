@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LogIn</title>
+        <link rel="stylesheet" href="./css/all.min.css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <section>
+            <div class="container-fluid vh-100">
+                <div class="row">
+                    <div class="col-6 bg-secondary-subtle">
+                        <div
+                            class="inner d-flex gap-5 flex-column justify-content-center vh-100 align-content-center p-5"
+                        >
+                            <h1 class="bold text-uppercase text-center">
+                                Welcome to Nike
+                            </h1>
+
+                            <form
+                                action=""
+                                class="signin w-75 mx-auto d-flex gap-3 flex-column px-3"
+                            >
+                                <input
+                                    id="logemail"
+                                    class="form-control"
+                                    type="email"
+                                    placeholder="Email"
+                                />
+
+                                <input
+                                    id="logpassword"
+                                    class="form-control"
+                                    type="password"
+                                    placeholder="Password"
+                                />
+                                <div
+                                    class="logalert alert-danger bg-danger-subtle"
+                                    role="alert"
+                                >
+                                    <!-- <span class="fw-bold">Name</span>: must be
+                                    at least 3 characters
+                                    <br />
+                                    <span class="fw-bold">Password</span>: must
+                                    be at least 8 characters including a
+                                    lowercase, uppercase letter, and a number
+                                    <br /> -->
+                                </div>
+                                <button id="logsubmit" class="btn-danger btn">
+                                    Log In
+                                </button>
+                                <p class="text-body-secondary text-center">
+                                    If you don't have account?<span
+                                        id=""
+                                        role="button"
+                                        class="signupbtn text-primary"
+                                        onclick="goLogin()"
+                                    >
+                                        signup</span
+                                    >
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6 bgg vh-100"></div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+    </body>
+</html>
