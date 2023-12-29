@@ -52,7 +52,7 @@ submit.addEventListener('click', function (e) {
         localStorage.setItem('userPassword', JSON.stringify(uPassword));
 
         alert.classList.add('d-none');
-        window.location.assign('../index.html');
+        window.location.pathname = '/';
     } else {
         submit.setAttribute('disabled', '');
         alert.classList.remove('d-none');
