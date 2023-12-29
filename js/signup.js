@@ -69,7 +69,8 @@ submit.addEventListener('click', function (e) {
     }
 });
 loginbtn.addEventListener('click', function () {
-    window.location.assign('../index.html');
+    window.location.pathname = '/Smart-login-page/';
+    console.log(location.pathname);
 });
 // sign in validation
 function sumbitDisabled() {
