@@ -22,7 +22,7 @@ if (
     JSON.parse(localStorage.getItem('isLogin')) !== null &&
     JSON.parse(localStorage.getItem('isLogin')) !== undefined
 ) {
-    window.location.assign('../home.html');
+    window.location.pathname = '/Smart-login-page/home.html';
 }
 console.log(logsubmit);
 logsubmit.addEventListener('click', function (e) {
