@@ -11,10 +11,11 @@ var emailRegx = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 var passwordRegx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,32}$/;
 var nameRegx = /^[a-zA-Z ]{3,}$/;
 ///regex and validation
-if (JSON.parse(localStorage.getItem('isLogin')) === null) {
-    window.location.pathname = '/Smart-login-page/';
-
-    console.log(JSON.parse(localStorage.getItem('isLogin')));
+if (
+    JSON.parse(localStorage.getItem('isLogin')) !== null &&
+    JSON.parse(localStorage.getItem('isLogin')) !== undefined
+) {
+    window.location.pathname = '/Smart-login-page/home.html';
 }
 function test(element, regex) {
     element.addEventListener('keyup', function (e) {
