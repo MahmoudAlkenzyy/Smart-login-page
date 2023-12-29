@@ -13,6 +13,7 @@ logout.addEventListener('click', function () {
     localStorage.removeItem('isLogin');
 });
 if (JSON.parse(localStorage.getItem('isLogin')) === null) {
-    window.location.assign('../index.html');
+    window.location.pathname = '/Smart-login-page/';
+
     console.log(JSON.parse(localStorage.getItem('isLogin')));
 }
