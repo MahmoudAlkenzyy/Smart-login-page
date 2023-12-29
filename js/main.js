@@ -32,7 +32,7 @@ logsubmit.addEventListener('click', function (e) {
         logemail.value == JSON.parse(localStorage.getItem('userEmail'))
     ) {
         localStorage.setItem('isLogin', JSON.stringify(true));
-        window.location.assign('../home.html');
+        window.location.pathname = '/Smart-login-page/home.html';
         console.log('lll');
     } else if (
         logemail.value !== JSON.parse(localStorage.getItem('userEmail'))
