@@ -3,7 +3,7 @@ var logpassword = document.querySelector('#logpassword');
 var logsubmit = document.querySelector('#logsubmit');
 var logalert = document.querySelector('.logalert');
 var loginForm = document.querySelector('.signin');
-
+var sign_up = '../signup.html';
 // if (
 //     localStorage.getItem('loginState') !== null &&
 //     localStorage.getItem('loginState') !== undefined
@@ -15,7 +15,7 @@ var loginForm = document.querySelector('.signin');
 
 var signupbtn = document.querySelector('.signupbtn');
 signupbtn.addEventListener('click', function () {
-    window.location.assign('../signup.html');
+    window.location.href = sign_up;
     console.log('asc');
 });
 if (
